@@ -25,7 +25,7 @@ class SDOF
         $this->maxTd = 10;
         $this->Td = 0.4;
         $this->DT = 0.02;
-        $this->g = 981; // assume mm
+        $this->g = 9810; // assume mm
         $this->zi = 0.05;
         $this->nt = 0;
         $this->Umax = array();
