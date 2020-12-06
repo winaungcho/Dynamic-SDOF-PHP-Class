@@ -11,7 +11,7 @@ PHP class for the dynamic analysis on single degree of freedom structure due to 
 8. To do a response history analysis, first input stiffness and mass properties of system using #setKM($k, $m) function. Then load accelerogram file using #loadGAcc($name) where $name is the url or kobens.txt. Out put response is in array $this->u and corresponding time is as that of accelerogram.
 9. To perform spectrum analysis, first load accelerogram file using #loadGAcc($name). Then run #calcSpectrum(). Result is in array $this->Umax which is an array of pairs [T, RA] where T is damped natural period of system and RA represent the response acceleration of center of mass.
 10. Sample file format of accelerogram is 
-<code>
+<pre>
   0,-0.3
 0.02,-0.3
 0.04,0
@@ -31,4 +31,4 @@ PHP class for the dynamic analysis on single degree of freedom structure due to 
 0.32,0
   …
   …
-  </code>
+  </pre>
